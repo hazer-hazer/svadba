@@ -1,9 +1,9 @@
 <template>
     <div class="card">
-        <img src="~/public/us1.png" class="big-photo floating-image">
+        <img src="/us1.png" class="big-photo floating-image">
 
         <div class="kitya-img">
-            <img src="~/public/kitya.png">
+            <img src="/kitya.png">
         </div>
 
         <div class="content" style="padding-top: 5%;">

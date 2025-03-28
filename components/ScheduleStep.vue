@@ -1,10 +1,10 @@
 <template>
     <div class="card">
         <div class="api-img">
-            <img src="/public/api.png">
+            <img src="/api.png">
         </div>
         <div class="us-img">
-            <img src="/public/us3.png">
+            <img src="/us3.png">
         </div>
         <div class="content">
             <p class="left-block">

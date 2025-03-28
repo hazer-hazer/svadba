@@ -1,8 +1,8 @@
 <template>
     <div class="card">
-        <div class="voltos-img"><img src="/public/voltos1.png"></div>
+        <div class="voltos-img"><img src="/voltos1.png"></div>
 
-        <div class="us-img floating-image"><img src="/public/us2.png"></div>
+        <div class="us-img floating-image"><img src="/us2.png"></div>
 
         <div class="content">
             <p class="right-block">

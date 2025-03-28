@@ -55,7 +55,7 @@ body {
   justify-content: center;
   /* horizontal */
 
-  background-image: url('/public/bg.png');
+  background-image: url('bg.png');
   background-size: cover;
 }
 
@@ -85,7 +85,7 @@ swiper-slide {
   box-shadow: 0px 10px 10px -1px #666a;
   padding: 10px 20px;
 
-  background-image: url('/public/paper.png');
+  background-image: url('paper.png');
   background-size: cover;
 }
 </style>
