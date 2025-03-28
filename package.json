@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxt/content": "^3.4.0",
     "@nuxt/eslint": "^1.2.0",
     "@nuxt/fonts": "^0.11.0",
@@ -18,10 +19,16 @@
     "@nuxt/scripts": "^0.11.5",
     "@nuxt/ui": "^3.0.1",
     "@unhead/vue": "^2.0.2",
+    "crypto-js": "^4.2.0",
     "eslint": "^9.23.0",
     "nuxt": "^3.16.1",
+    "nuxt-swiper": "^2.0.0",
+    "swiper": "^11.2.6",
     "typescript": "^5.8.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "sass": "^1.86.0"
   }
 }

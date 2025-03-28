@@ -1,0 +1,62 @@
+$white: #fefae0;
+$card-bg: #faedcd;
+$foreground: #463f3a;
+
+// https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373
+
+a {
+    color: $foreground;
+    &:visited {
+        color: #463f3aaa;
+    }
+}
+
+.floating-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px) rotateZ(10deg);
+        opacity: 0.9;
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-15px) rotateZ(10deg);
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px) rotateZ(10deg);
+        opacity: 0.9;
+    }
+}
+
+.card {
+    height: 100%;
+
+    .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        // margin-left: auto;
+        width: 100%;
+        height: 100%;
+
+        .left-block,
+        .right-block {
+            font-size: clamp(1rem, min(3vw, 2.5vh), 1.5rem);
+        }
+
+        .left-block {
+            padding-right: 30%;
+        }
+
+        .right-block {
+            padding-left: 30%;
+        }
+    }
+}
