@@ -7,12 +7,12 @@
         </div>
 
         <div class="content" style="padding-top: 5%;">
-            <h1>
+            <h1 class="greating">
                 Приветствуем, {{ invited }}
             </h1>
             <p class="right-block">
-                Мы приглашаем тебя на нашу свадьбу <u>16.08.2025</u>.
-                Дальше Вы больше узнаете об условиях и пройдете маленький опрос по предпочтениям в еде.
+                Совсем скоро состоится день нашей свадьбы, и мы будем счастливы, если вы разделите с нами этот чудесный
+                праздник!
             </p>
             <!-- <h1 class="date">
                 16.08.2025
@@ -26,7 +26,32 @@
 //     active: boolean
 // }>()
 
-const invited = 'Мистер Кек';
+const route = useRoute()
+
+const [nameId] = route.path.split('/').filter(p => !!p.length)
+
+const namesMap: Record<string, string> = {
+    as: 'Анна & Сергей',
+    s: 'Саша',
+    ma: 'Миша & Алёна',
+    na: 'Нина & Альберт',
+    kt: 'Катя & Толя',
+    b: 'Боря',
+    zs: 'Женя & Сергей',
+    dk: 'Даша & Костя',
+    ts: 'Таня & Сергей',
+    m: 'Макс',
+    kg: 'Катя',
+    vt: 'Вова & Таня',
+    ls: 'Люда & Слава',
+    lm: 'Лёша & Маша',
+    sa: 'Алина & Саша',
+    ks: 'Ксюша',
+    vs: 'Вера & Саша',
+    ay: 'Андрей & Юля',
+}
+
+const invited = namesMap[nameId] ?? 'кажется, вас нет в списке'
 </script>
 
 <style scoped lang="scss">
@@ -37,11 +62,13 @@ const invited = 'Мистер Кек';
         width: 100%;
         height: 100%;
 
-        h1 {
+        .greating {
             width: 100%;
             padding-left: 3%;
-            padding-top: clamp(0%, 5rem, 0%);
+            padding-top: clamp(5%, 5rem, 0%);
             text-decoration: underline;
+            letter-spacing: 0.1rem;
+            font-size: 2rem;
         }
 
         p {
@@ -53,9 +80,9 @@ const invited = 'Мистер Кек';
 
 .big-photo {
     position: absolute;
-    top: 0;
+    top: -10%;
     right: 1rem;
-    width: 30vw;
+    width: clamp(10vw, 35vw, 50%);
     box-shadow: 5px -5px 25px -1px #aaa;
     // image-rendering: optimizeQuality;
     // filter: drop-shadow(10px 10px 20px $white) contrast(90%) brightness(80%) sepia(80%);
@@ -75,13 +102,15 @@ const invited = 'Мистер Кек';
 .kitya-img {
     position: absolute;
     bottom: 10%;
-    left: 3%;
-    width: 25%;
+    left: -1rem;
+    width: clamp(100px, 300px, 30%);
+    // height: clamp(15vh, 40%, 30);
+    max-height: 300px;
     aspect-ratio: 9/11;
 
     border-radius: 10px;
     overflow: hidden;
-    transform: rotateZ(5deg);
+    transform: rotateZ(-5deg);
 
     box-shadow: -1px 5px 10px -5px #000;
 

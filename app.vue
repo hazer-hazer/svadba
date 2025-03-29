@@ -16,6 +16,9 @@
       <swiper-slide class="form-slide">
         <FormStep />
       </swiper-slide>
+      <swiper-slide>
+        <OutroStep />
+      </swiper-slide>
     </swiper-container>
   </div>
 </template>
@@ -62,7 +65,7 @@ body {
 swiper-container {
   width: 80vw;
   margin: 0;
-  height: 70vh;
+  height: 65vh;
   padding-right: 2rem;
 
   --swiper-navigation-color: $white;

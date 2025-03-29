@@ -2,19 +2,17 @@
     <div class="card">
         <div class="voltos-img"><img src="/voltos1.png"></div>
 
-        <div class="us-img floating-image"><img src="/us2.png"></div>
+        <div class="us-img floating-image"><img src="/us5.png"></div>
 
         <div class="content">
             <p class="right-block">
+                • 🎁 Не ломайте голову над подарками! Ваши конверты помогут нам осуществить мечты в текущем ремонте
+                новой квартиры или организовать новое путешествие.
+            </p>
+            <p class="left-block">
                 • 💐 Мы с радостью примем любые подарки, но нам некуда деть 20 букетов цветов 😅. Вместо этого с
                 радостью
                 примем сертификат в цветочный магазин, живой цветок в горшке, деньги или символический подарок.
-            </p>
-            <p class="left-block">
-                • 🤵 Свадьба пройдет на открытой площадке на природе.
-                <br>Для вашего комфорта просим приготовить верхнюю
-                одежду и
-                обувь поудобнее, возможно сменную пару для танцев.
             </p>
         </div>
     </div>
@@ -25,27 +23,31 @@
 
 .us-img {
     position: absolute;
-    top: -2%;
+    top: 0;
     left: 2%;
-    width: clamp(5rem, 22vw, 30%);
-    aspect-ratio: 1/1;
+    width: clamp(5rem, 20vw, 29%);
     // filter: sepia(70%) opacity(0.9);
-    border-radius: 50%;
+    border-radius: 5%;
+    overflow: hidden;
+    max-height: 50%;
 
     img {
-        position: absolute;
+        display: block;
         width: 100%;
-        border-radius: 50%;
         border: none;
+        object-fit: cover;
     }
 }
 
 .voltos-img {
     position: absolute;
     // bottom: 4rem;
-    top: 45%;
+    bottom: clamp(0%, 3vh, 10%);
     right: 0rem;
-    width: clamp(5rem, 20vw, 30%);
+    // height: clamp(10rem, 45vh, 50%);
+    width: 30%;
+    max-width: 300px;
+    max-height: 40vh;
     aspect-ratio: 9 / 12;
     // height: max-content;
     transform: rotateZ(-5deg);
@@ -77,6 +79,7 @@
     }
 
     img {
+        display: block;
         width: 100%;
         border-radius: 15px;
     }
