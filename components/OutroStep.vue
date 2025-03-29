@@ -7,10 +7,10 @@
       <img src="/us6.png">
     </div>
     <div class="us-img bl">
-      <img src="/us4.png">
+      <img src="/us7.png">
     </div>
     <div class="us-img br">
-      <img src="/us7.png">
+      <img src="/us4.png">
     </div>
 
     <h1 class="text">
@@ -25,29 +25,23 @@
 .us-img {
   position: absolute;
 
-  // aspect-ratio: initial;
-  // max-width: 30%;
-  // width: 25%;
-  max-width: 25%;
-  
-  // max-height: 50%;
-  // height: 300px;
-  // max-height: 200px;
-  // height: 400px;
+  max-width: max(25%, 20vh);
+  max-height: max(50%, 50vh);
+
   border-radius: 10px;
   overflow: hidden;
 
-  box-shadow: 0 10px 25px -23px #000;
+  box-shadow: 0 5px 20px -10px #000;
   vertical-align: bottom;
 
   &.tl {
-    top: -5%;
+    top: 2%;
     left: -2%;
     transform: rotateZ(-5deg);
   }
 
   &.tr {
-    top: -2%;
+    top: -10%;
     right: -2%;
     transform: rotateZ(10deg);
   }
@@ -55,12 +49,12 @@
   &.bl {
     bottom: -2%;
     left: -2%;
-    transform: rotateZ(-12deg);
-    max-width: 35%;
+    transform: rotateZ(12deg);
+    max-height: 50%;
   }
 
   &.br {
-    bottom: -10%;
+    bottom: 10%;
     right: 2%;
     transform: rotateZ(-8deg);
   }
