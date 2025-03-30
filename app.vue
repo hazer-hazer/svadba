@@ -3,7 +3,8 @@
     <swiper-container class="swiper" :slides-per-view="1" :create-elements="true" :keyboard="{ enabled: true }"
       effect="cards" mousewheel-force-to-axis="true" :scrollbar="true" direction="vertical" :navigation="{
         enabled: true,
-      }" no-swiping-selector="iframe,a,input">
+      }" no-swiping-selector="iframe,a,input"
+      focusable-elements="input, select, option, textarea, button, video, label, iframe" :prevent-clicks="false">
       <swiper-slide>
         <WelcomeStep />
       </swiper-slide>
