@@ -68,7 +68,8 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
             padding-top: clamp(5%, 5rem, 0%);
             text-decoration: underline;
             letter-spacing: 0.1rem;
-            font-size: 2rem;
+            font-size: clamp(2vh, 5vw, 2rem);
+            max-width: 50%;
         }
 
         p {
@@ -88,6 +89,10 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
     // filter: drop-shadow(10px 10px 20px $white) contrast(90%) brightness(80%) sepia(80%);
     border-radius: 3vh 1vh 3vh 1vh / 3vh 1vh 3vh 1vh;
 
+    rotate: 10deg;
+
+    animation-duration: 5s;
+
     // border: 5px solid #d4a37311;
 
     &.rot-10 {
@@ -101,7 +106,7 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
 
 .kitya-img {
     position: absolute;
-    bottom: 10%;
+    top: 45%;
     left: -1rem;
     width: clamp(100px, 300px, 30%);
     // height: clamp(15vh, 40%, 30);

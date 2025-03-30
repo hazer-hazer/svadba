@@ -18,19 +18,19 @@ a {
 @keyframes float {
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px) rotateZ(10deg);
+        transform: translatey(0px);
         opacity: 0.9;
     }
 
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-15px) rotateZ(10deg);
+        transform: translatey(-15px) scale(1.03);
         opacity: 1;
     }
 
     100% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px) rotateZ(10deg);
+        transform: translatey(0px);
         opacity: 0.9;
     }
 }

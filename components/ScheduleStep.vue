@@ -8,8 +8,8 @@
         </div>
         <div class="content">
             <p class="left-block">
-                • 📍 Свадьба состоится 16 августа 2025 года. Место проведения: <a style="color: #897;"
-                    href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
+                • 📍 Свадьба состоится 16 августа 2025 года. Место проведения: <a class="swiper-no-swiping"
+                    style="color: #897;" href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
                     «Парк-отель Остров
                     Рыболовная усадьба»</a>
                 <Icon name="lucide:link" style="padding: 0;padding-left: 10px;font-size: 0.9rem;" />. Сбор гостей в
@@ -50,7 +50,7 @@
     position: absolute;
     top: -5%;
     right: 2%;
-    width: clamp(23%, 200px, 28%);
+    width: clamp(23%, 300px, 28%);
     aspect-ratio: 9/12;
     // filter: sepia(70%) opacity(0.9);
 

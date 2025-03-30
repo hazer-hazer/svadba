@@ -3,7 +3,7 @@
     <swiper-container class="swiper" :slides-per-view="1" :create-elements="true" :keyboard="{ enabled: true }"
       effect="cards" mousewheel-force-to-axis="true" :scrollbar="true" direction="vertical" :navigation="{
         enabled: true,
-      }">
+      }" no-swiping-selector="iframe,a,input">
       <swiper-slide>
         <WelcomeStep />
       </swiper-slide>
