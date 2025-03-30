@@ -7,7 +7,7 @@
       <img src="/us7.png">
     </div>
     <h1 class="text">
-      ДО СКОРОЙ ВСТРЕЧИ!
+      До скорой встречи!
       <br>
       <span>С любовью, Катя & Ваня</span>
     </h1>
@@ -126,6 +126,10 @@
   .text {
     grid-area: text;
     font-size: 1.8rem;
+    line-height: 140%;
+    span {
+      font-size: 1.5rem;
+    }
   }
 }
 

@@ -4,7 +4,9 @@
       effect="cards" mousewheel-force-to-axis="true" :scrollbar="true" direction="vertical" :navigation="{
         enabled: true,
       }" no-swiping-selector="iframe,a,input"
-      focusable-elements="input, select, option, textarea, button, video, label, iframe" :prevent-clicks="false">
+      focusable-elements="input, select, option, textarea, button, video, label, iframe" :prevent-clicks="false"
+      :prevent-clicks-propagation="false" :prevent-interaction-on-transition="false" :observer="true"
+      :observe-parents="true" :grab-cursor="true" :watch-slides-progress="true">
       <swiper-slide>
         <WelcomeStep />
       </swiper-slide>
@@ -14,7 +16,7 @@
       <swiper-slide>
         <GiftStep />
       </swiper-slide>
-      <swiper-slide class="form-slide">
+      <swiper-slide class="form-slide swiper-no-swiping">
         <FormStep />
       </swiper-slide>
       <swiper-slide>

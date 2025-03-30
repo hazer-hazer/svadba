@@ -22,4 +22,10 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "nuxt-swiper",
   ],
+
+  swiper: {
+    bundled: true,
+    enableComposables: true,
+    
+  }
 });
