@@ -1,19 +1,25 @@
 <template>
     <div class="card">
-        <img src="/us1.png" class="big-photo floating-image">
+        <div class="content">
+            <div class="left">
+                <h1 class="greating">
+                    Приветствуем, {{ invited }}
+                </h1>
+            </div>
+            <div class="right-photo big-photo floating-image">
+                <img src="/us1.png">
+            </div>
+            <div class="kitya-img left-photo">
+                <img src="/kitya.png">
+            </div>
+            <div class="right">
+                <div class="text">
+                    Совсем скоро состоится день нашей свадьбы, и мы будем счастливы, если вы разделите с нами этот
+                    чудесный
+                    праздник!
+                </div>
+            </div>
 
-        <div class="kitya-img">
-            <img src="/kitya.png">
-        </div>
-
-        <div class="content" style="padding-top: 5%;">
-            <h1 class="greating">
-                Приветствуем, {{ invited }}
-            </h1>
-            <p class="right-block">
-                Совсем скоро состоится день нашей свадьбы, и мы будем счастливы, если вы разделите с нами этот чудесный
-                праздник!
-            </p>
             <!-- <h1 class="date">
                 16.08.2025
             </h1> -->
@@ -57,76 +63,80 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
 <style scoped lang="scss">
 @use '/assets/css/main.scss' as *;
 
-.card {
-    .content {
-        width: 100%;
-        height: 100%;
-
-        .greating {
-            width: 100%;
-            padding-left: 3%;
-            padding-top: clamp(5%, 5rem, 0%);
-            text-decoration: underline;
-            letter-spacing: 0.1rem;
-            font-size: clamp(2vh, 5vw, 2rem);
-            max-width: 50%;
-        }
-
-        p {
-            width: 60%;
-            font-size: clamp(1rem, 3vw, 1.5rem);
-        }
-    }
+.card > .content {
+    gap: 15px;
 }
 
-.big-photo {
-    position: absolute;
-    top: -10%;
-    right: 1rem;
-    width: clamp(10vw, 35vw, 50%);
-    box-shadow: 5px -5px 25px -1px #aaa;
-    // image-rendering: optimizeQuality;
-    // filter: drop-shadow(10px 10px 20px $white) contrast(90%) brightness(80%) sepia(80%);
-    border-radius: 3vh 1vh 3vh 1vh / 3vh 1vh 3vh 1vh;
+// .card {
+//     .content {
+//         width: 100%;
+//         height: 100%;
 
-    rotate: 10deg;
+//         .greating {
+//             width: 100%;
+//             padding-left: 3%;
+//             padding-top: clamp(5%, 5rem, 0%);
+//             text-decoration: underline;
+//             letter-spacing: 0.1rem;
+//             font-size: clamp(2vh, 5vw, 2rem);
+//             max-width: 50%;
+//         }
 
-    animation-duration: 5s;
+//         p {
+//             width: 60%;
+//             font-size: clamp(1rem, 3vw, 1.5rem);
+//         }
+//     }
+// }
 
-    // border: 5px solid #d4a37311;
+// .big-photo {
+//     position: absolute;
+//     top: 0%;
+//     right: 1rem;
+//     width: clamp(10vw, 45vw, 40%);
+//     box-shadow: 5px -5px 25px -1px #aaa;
+//     // image-rendering: optimizeQuality;
+//     // filter: drop-shadow(10px 10px 20px $white) contrast(90%) brightness(80%) sepia(80%);
+//     border-radius: 3vh 1vh 3vh 1vh / 3vh 1vh 3vh 1vh;
 
-    &.rot-10 {
-        transform: rotateZ(10deg);
-    }
+//     rotate: 10deg;
 
-    &.rot-m10 {
-        transform: rotateZ(-10deg);
-    }
-}
+//     animation-duration: 5s;
 
-.kitya-img {
-    position: absolute;
-    top: 45%;
-    left: -1rem;
-    width: clamp(100px, 300px, 30%);
-    // height: clamp(15vh, 40%, 30);
-    max-height: 300px;
-    aspect-ratio: 9/11;
+//     // border: 5px solid #d4a37311;
 
-    border-radius: 10px;
-    overflow: hidden;
-    transform: rotateZ(-5deg);
+//     &.rot-10 {
+//         transform: rotateZ(10deg);
+//     }
 
-    box-shadow: -1px 5px 10px -5px #000;
+//     &.rot-m10 {
+//         transform: rotateZ(-10deg);
+//     }
+// }
 
-    img {
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-    }
-}
+// .kitya-img {
+//     position: absolute;
+//     top: 45%;
+//     left: -1rem;
+//     width: clamp(100px, 300px, 40%);
+//     // height: clamp(15vh, 40%, 30);
+//     max-height: 300px;
+//     aspect-ratio: 9/11;
+
+//     border-radius: 10px;
+//     overflow: hidden;
+//     transform: rotateZ(-5deg);
+
+//     box-shadow: -1px 5px 10px -5px #000;
+
+//     img {
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//         width: 100%;
+//         object-fit: cover;
+//     }
+// }
 
 .date {
     position: absolute;

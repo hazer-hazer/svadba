@@ -39,30 +39,82 @@ a {
     height: 100%;
 
     .content {
-        display: grid;
-        grid-gap: auto;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        // display: grid;
+        // grid-gap: auto;
+        // grid-template-rows: 1fr 1fr;
+        // grid-template-columns: 1fr;
         // margin-left: auto;
         width: 100%;
         height: 100%;
 
-        text-overflow: clip;
-        word-wrap: normal;
-        white-space: wrap;
+        // text-overflow: clip;
+        // word-wrap: normal;
+        // white-space: wrap;
 
-        .left-block,
-        .right-block {
-            text-align: left;
-            font-size: clamp(1rem, min(3vw, 2.5vh), 1.5rem);
+        display: grid;
+        grid-template-columns: 1.1fr 0.8fr 1.1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "left left rightPhoto"
+            "leftPhoto right right";
+        justify-items: center;
+        align-items: center;
+        font-size: clamp(1rem, min(3vw, 2.5vh), 1.5rem);
+
+        .right {
+            grid-area: right;
         }
 
-        .left-block {
-            padding-right: 30%;
+        .left {
+            grid-area: left;
         }
 
-        .right-block {
-            padding-left: 30%;
+        .left-photo {
+            grid-area: leftPhoto;
+            rotate: -10deg;
+            translate: -15% 0;
         }
+
+        .right-photo {
+            grid-area: rightPhoto;
+            rotate: 10deg;
+            translate: 5% 0;
+        }
+
+        .left-photo,
+        .right-photo {
+            display: block;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px -10px #000;
+            // height: fit-content;
+            // max-height: 100%;
+
+            & > img {
+                min-height: 150px;
+                min-width: 150px;
+                max-height: 400px;
+                max-width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+
+        // .left-block,
+        // .right-block {
+        //     text-align: left;
+        //     font-size: clamp(1rem, min(3vw, 2.5vh), 1.5rem);
+        // }
+
+        // .left-block {
+        //     padding-right: 40%;
+        // }
+
+        // .right-block {
+        //     padding-left: 40%;
+        //     text-align: right;
+        // }
     }
 }
