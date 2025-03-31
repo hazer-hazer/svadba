@@ -79,14 +79,14 @@ a {
 
         .right-photo {
             grid-area: rightPhoto;
-            rotate: 10deg;
-            translate: 5% 0;
+            rotate: 8deg;
+            translate: 15% 0;
         }
 
         .left-photo,
         .right-photo {
             display: block;
-            border-radius: 20px;
+            border-radius: 1rem;
             overflow: hidden;
             box-shadow: 0 5px 25px -10px #000;
             // height: fit-content;
@@ -94,7 +94,7 @@ a {
 
             & > img {
                 min-height: 150px;
-                min-width: 150px;
+                min-width: 130px;
                 max-height: 400px;
                 max-width: 100%;
                 display: block;

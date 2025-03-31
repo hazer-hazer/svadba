@@ -16,9 +16,9 @@
       <swiper-slide>
         <GiftStep />
       </swiper-slide>
-      <swiper-slide class="form-slide swiper-no-swiping">
+      <!-- <div class="form-slide swiper-no-swiping">
         <FormStep />
-      </swiper-slide>
+      </div> -->
       <swiper-slide>
         <OutroStep />
       </swiper-slide>
@@ -43,9 +43,11 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   background-color: $white;
   font-family: 'Bad Script', serif;
   color: $foreground;
+  // overflow: scroll;
 }
 
 #main {
@@ -61,8 +63,31 @@ body {
   justify-content: center;
   /* horizontal */
 
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+  // width: calc(100% - 20vw);
+  // height: calc(100vh - 200px);
+  // padding: 100px 10vw;
+  // justify-items: center;
   background-image: url('/bg.png');
   background-size: cover;
+  background-position: center;
+
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: 1fr;
+  // gap: 50px 0;
+
+  .card {
+    // min-width: 40vw;
+    // max-width: 700px;
+    // height: 50vh;
+    // background-image: url('/paper.png');
+    // background-size: cover;
+    // box-shadow: 0px 10px 10px -1px #666a;
+    padding: 10px;
+    border-radius: 1rem;
+  }
 }
 
 swiper-container {

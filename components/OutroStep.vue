@@ -10,6 +10,12 @@
       До скорой встречи!
       <br>
       <span>С любовью, Катя & Ваня</span>
+      <div class="feedback-block">
+        <span>Нам очень важно получить обратную связь</span>
+        <a class=""
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdTVH6nOJ75KFlhlOj95sfYpG6ApI3H4dM6qSnmPF7XgQfyUQ/viewform">Заполнить
+          форму</a>
+      </div>
     </h1>
     <div class="us-img br floating-image">
       <img src="/us4.png">
@@ -71,9 +77,10 @@
 //   }
 // }
 
+
 .card {
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 4fr 1fr 4fr;
   gap: 0;
   grid-auto-flow: row;
@@ -81,44 +88,48 @@
     "tl . tr"
     "text text text"
     "bl . br";
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   justify-items: center;
-  align-items: center;
-
+  align-items: self-start;
 
   .tl {
     grid-area: tl;
     rotate: -10deg;
     animation-duration: 8s;
+    translate: -15% -5%;
   }
 
   .tr {
     grid-area: tr;
     rotate: -8deg;
+    translate: 15% -10%;
   }
 
   .bl {
     grid-area: bl;
     rotate: 12deg;
+    translate: -15% 5%;
   }
 
   .br {
     grid-area: br;
     rotate: 3deg;
     animation-duration: 5s;
+    translate: 15% 5%;
   }
 
   .us-img {
     // width: 100;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 1rem;
     box-shadow: -1px 4px 20px -12px #000;
 
     img {
       display: block;
-      width: 100%;
-      max-width: 400px;
+      width: 110%;
+      max-width: 250px;
+      max-height: 300px;
       object-fit: cover;
     }
   }
@@ -127,8 +138,43 @@
     grid-area: text;
     font-size: 1.8rem;
     line-height: 140%;
+    text-align: center;
+
     span {
       font-size: 1.5rem;
+    }
+
+    .feedback-block {
+      display: block;
+
+      text-align: center;
+
+      span {
+        display: block;
+        font-size: 1rem;
+      }
+
+      a {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        padding: 5px 20px;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px -5px #000;
+        background-color: #fff1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-decoration: underline;
+        // font-family: 'Marck Script';
+        font-weight: 900;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background-color: #fff5;
+          box-shadow: 0 10px 25px -10px #000;
+        }
+      }
     }
   }
 }
@@ -148,5 +194,6 @@
   //   font-size: clamp(2vw, 2vh, 2rem);
   //   padding-left: 10px;
   // }
+
 }
 </style>
