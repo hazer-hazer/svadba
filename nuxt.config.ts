@@ -26,6 +26,5 @@ export default defineNuxtConfig({
   swiper: {
     bundled: true,
     enableComposables: true,
-    
-  }
+  },
 });

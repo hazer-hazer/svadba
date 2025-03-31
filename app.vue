@@ -1,9 +1,6 @@
 <template>
   <div id="main">
-    <swiper-container :slides-per-view="1" :create-elements="true" :keyboard="{ enabled: true }" effect="cards"
-      :scrollbar="true" direction="vertical" :navigation="{
-        enabled: true,
-      }" :prevent-clicks="false" :simulate-touch="false">
+    <swiper-container :slides-per-view="1" effect="cards" :threshold="70">
       <swiper-slide>
         <WelcomeStep />
       </swiper-slide>
@@ -30,6 +27,14 @@ register();
 
 // const containerRef = ref(null)
 // const swiper = useSwiper(containerRef)
+
+/**
+ * :create-elements="true" :keyboard="{ enabled: true }"
+      :scrollbar="true" direction="vertical" :navigation="{
+        enabled: true,
+      }" :prevent-clicks="false" :prevent-clicks-propagation="false" :prevent-interaction-on-transition="false"
+      :touch-ratio="2" touch-events-target="container"
+ */
 </script>
 
 <style lang="scss">

@@ -12,7 +12,7 @@
       <span>С любовью, Катя & Ваня</span>
       <div class="feedback-block">
         <span>Нам очень важно получить обратную связь</span>
-        <a class=""
+        <a class="swiper-no-swiping"
           href="https://docs.google.com/forms/d/e/1FAIpQLSdTVH6nOJ75KFlhlOj95sfYpG6ApI3H4dM6qSnmPF7XgQfyUQ/viewform">Заполнить
           форму</a>
       </div>
