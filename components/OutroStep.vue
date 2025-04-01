@@ -81,7 +81,7 @@
 .card {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 4fr 1fr 4fr;
+  grid-template-rows: 2fr 1fr 2fr;
   gap: 0;
   grid-auto-flow: row;
   grid-template-areas:
@@ -92,6 +92,8 @@
   // height: 100%;
   justify-items: center;
   align-items: self-start;
+  max-height: 70vh;
+  // height: max-content;
 
   .tl {
     grid-area: tl;
@@ -121,6 +123,7 @@
 
   .us-img {
     // width: 100;
+    // height: max-content;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: -1px 4px 20px -12px #000;

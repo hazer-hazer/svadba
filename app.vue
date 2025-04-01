@@ -1,27 +1,20 @@
 <template>
   <div id="main">
-    <swiper-container :slides-per-view="1" effect="cards" :threshold="70" :watch-slides-progress="true"
-      :prevent-clicks="false" direction="vertical" :observer="true" :observe-parents="true" :parallax="true"
-      :simulate-touch="true" :resistance="true" :scrollbar="true" :short-swipes="false" :long-swipes="false"
-      :touch-start-prevent-default="false" :keyboard="{
-        enabled: true
-      }">
-      <swiper-slide>
-        <WelcomeStep />
-      </swiper-slide>
-      <swiper-slide>
-        <ScheduleStep />
-      </swiper-slide>
-      <swiper-slide>
-        <GiftStep />
-      </swiper-slide>
-      <!-- <div class="form-slide swiper-no-swiping">
+    <div>
+      <WelcomeStep />
+    </div>
+    <div>
+      <ScheduleStep />
+    </div>
+    <div>
+      <GiftStep />
+    </div>
+    <!-- <div class="form-slide swiper-no-swiping">
         <FormStep />
       </div> -->
-      <swiper-slide>
-        <OutroStep />
-      </swiper-slide>
-    </swiper-container>
+    <div>
+      <OutroStep />
+    </div>
   </div>
 </template>
 
@@ -67,32 +60,31 @@ body {
 
   display: flex;
   align-items: center;
-  /* vertical */
   justify-content: center;
-  /* horizontal */
 
-  // overflow-y: scroll;
-  // overflow-x: hidden;
-  // width: calc(100% - 20vw);
-  // height: calc(100vh - 200px);
-  // padding: 100px 10vw;
-  // justify-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: calc(100% - 20vw);
+  height: calc(100vh - 200px);
+  padding: 100px 10vw;
+  justify-items: center;
   background-image: url('/bg.png');
   background-size: cover;
   background-position: center;
 
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: 1fr;
-  // gap: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 50px 0;
 
   .card {
-    // min-width: 40vw;
-    // max-width: 700px;
-    // height: 50vh;
-    // background-image: url('/paper.png');
-    // background-size: cover;
-    // box-shadow: 0px 10px 10px -1px #666a;
+    min-width: 40vw;
+    max-width: 700px;
+    height: max-content;
+    // max-height: 80vh;
+    background-image: url('/paper.png');
+    background-size: cover;
+    box-shadow: 0px 10px 10px -1px #666a;
     padding: 10px;
     border-radius: 1rem;
   }
