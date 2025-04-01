@@ -3,7 +3,8 @@
         <div class="content">
             <div class="left">
                 • 📍 Свадьба состоится 16 августа 2025 года. Место проведения: <a class="swiper-no-swiping"
-                    style="color: #897;" href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
+                    style="color: #897; font-weight: bolder; padding: 5px 10px;"
+                    href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
                     «Парк-отель Остров
                     Рыболовная усадьба»</a>
                 <Icon name="lucide:link" style="padding: 0;padding-left: 10px;font-size: 0.9rem;" />. Сбор гостей в

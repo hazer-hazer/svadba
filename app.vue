@@ -1,6 +1,11 @@
 <template>
   <div id="main">
-    <swiper-container :slides-per-view="1" effect="cards" :threshold="70">
+    <swiper-container :slides-per-view="1" effect="cards" :threshold="70" :watch-slides-progress="true"
+      :prevent-clicks="false" direction="vertical" :observer="true" :observe-parents="true" :parallax="true"
+      :simulate-touch="true" :resistance="true" :scrollbar="true" :short-swipes="false" :long-swipes="false"
+      :touch-start-prevent-default="false" :keyboard="{
+        enabled: true
+      }">
       <swiper-slide>
         <WelcomeStep />
       </swiper-slide>
@@ -21,9 +26,9 @@
 </template>
 
 <script lang="ts" setup>
-import { register } from 'swiper/element/bundle';
+// import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
-register();
+// register();
 
 // const containerRef = ref(null)
 // const swiper = useSwiper(containerRef)
@@ -50,6 +55,7 @@ body {
   font-family: 'Bad Script', serif;
   color: $foreground;
   // overflow: scroll;
+  user-select: none;
 }
 
 #main {
