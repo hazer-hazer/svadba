@@ -85,7 +85,7 @@ body {
     background-image: url('/paper.png');
     background-size: cover;
     box-shadow: 0px 10px 10px -1px #666a;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 1rem;
   }
 }
