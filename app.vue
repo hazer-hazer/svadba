@@ -69,8 +69,10 @@ body {
   padding: 100px 10vw;
   justify-items: center;
   background-image: url('/bg.png');
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -84,7 +86,7 @@ body {
     // max-height: 80vh;
     background-image: url('/paper.png');
     background-size: cover;
-    box-shadow: 0px 10px 10px -1px #666a;
+    box-shadow: 0px 15px 25px -15px #666;
     padding: 10px 20px;
     border-radius: 1rem;
   }
@@ -113,7 +115,7 @@ swiper-slide {
   border-radius: 1rem;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 10px 10px -1px #666a;
+  box-shadow: 0px 10px 10px -5px #666;
   padding: 10px 20px;
 
   background-image: url('/paper.png');

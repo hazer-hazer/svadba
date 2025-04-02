@@ -1,27 +1,30 @@
 <template>
   <div class="card">
+    <div class="us-img tl floating-image">
+      <img src="/us2.png">
+    </div>
     <div class="us-img tr">
       <img src="/us6.png">
     </div>
-    <div class="us-img bl">
-      <img src="/us7.png">
-    </div>
-    <h1 class="text">
-      До скорой встречи!
+    <div class="text">
+      <h1>
+        До скорой встречи!
+      </h1>
       <br>
       <span>С любовью, Катя & Ваня</span>
+      <hr>
       <div class="feedback-block">
-        <span>Нам очень важно получить обратную связь</span>
+        <span>Пожалуйста, выберите еду и напитки</span>
         <a class="swiper-no-swiping"
           href="https://docs.google.com/forms/d/e/1FAIpQLSdTVH6nOJ75KFlhlOj95sfYpG6ApI3H4dM6qSnmPF7XgQfyUQ/viewform">Заполнить
           форму</a>
       </div>
-    </h1>
+    </div>
+    <div class="us-img bl">
+      <img src="/us7.png">
+    </div>
     <div class="us-img br floating-image">
       <img src="/us4.png">
-    </div>
-    <div class="us-img tl floating-image">
-      <img src="/us2.png">
     </div>
   </div>
 </template>
@@ -80,18 +83,19 @@
 
 .card {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 2fr 1fr 2fr;
-  gap: 0;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
   grid-auto-flow: row;
   grid-template-areas:
-    "tl . tr"
-    "text text text"
-    "bl . br";
+    "tl tl tr tr"
+    "text text text text"
+    "bl bl br br";
   // width: 100%;
   // height: 100%;
   justify-items: center;
-  align-items: self-start;
+  align-items: center;
+  // max-height: 70vh;
   max-height: 70vh;
   // height: max-content;
 
@@ -122,29 +126,62 @@
   }
 
   .us-img {
-    // width: 100;
+    // max-width: 110%;
+    // max-height: 100%;
+    // width: 100%;
     // height: max-content;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 250px;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: -1px 4px 20px -12px #000;
+    // aspect-ratio: 1/1;
 
     img {
       display: block;
-      width: 110%;
-      max-width: 250px;
-      max-height: 300px;
+      width: 100%;
+      height: 100%;
+      // max-width: 100%;
+      // height: 100%;
+      // width: 110%;
+      // max-width: 250px;
+      // max-height: max;
+      // max-height: 100%;
       object-fit: cover;
+      object-position: center 10%;
+      // aspect-ratio: 1/1;
     }
   }
 
   .text {
     grid-area: text;
-    font-size: 1.8rem;
-    line-height: 140%;
+    // font-size: 1.8rem;
+    // line-height: 140%;
     text-align: center;
+    width: 100%;
 
-    span {
-      font-size: 1.5rem;
+    font-size: 80%;
+
+    &>span {
+      // font-size: 1.5rem;
+      font-size: 1.5em;
+    }
+
+    h1 {
+      font-size: 2em;
+      padding: 0;
+      margin: 0;
+      line-height: 0;
+    }
+
+    hr {
+      display: block;
+      height: 0;
+      border: none;
+      width: 80%;
+      box-shadow: 0 0 0 1px #fff5;
     }
 
     .feedback-block {
@@ -154,20 +191,20 @@
 
       span {
         display: block;
-        font-size: 1rem;
+        font-size: 1.4em;
       }
 
       a {
         display: block;
         width: max-content;
-        margin: 0 auto;
+        margin: 5px auto;
         padding: 5px 20px;
         border-radius: 5px;
-        box-shadow: 0 3px 10px -5px #000;
-        background-color: #fff1;
+        box-shadow: 0 3px 25px -25px #000, 0 0 1px 1px #a99;
+        background-color: #ffea;
         text-align: center;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.4em;
         text-decoration: underline;
         // font-family: 'Marck Script';
         font-weight: 900;
@@ -175,7 +212,7 @@
 
         &:hover {
           background-color: #fff5;
-          box-shadow: 0 10px 25px -10px #000;
+          box-shadow: 0 10px 25px -10px #000, 0 0 1px 1px #a99;
         }
       }
     }

@@ -50,11 +50,12 @@ a {
         // text-overflow: clip;
         // word-wrap: normal;
         // white-space: wrap;
+        text-align:start;
 
         display: grid;
         grid-template-columns: 1.1fr 0.8fr 1.1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px 20px;
+        gap: 10px 15px;
         grid-auto-flow: row;
         grid-template-areas:
             "left left rightPhoto"

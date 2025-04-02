@@ -3,7 +3,11 @@
         <div class="content">
             <div class="left">
                 <h1 class="greating">
-                    Приветствуем, {{ invited }}
+                    Приветствуем,<br> <span v-if="typeof invited === 'string'">{{ invited }}</span><span v-else>{{
+                        invited[0] }}</span>
+                    <div v-if="Array.isArray(invited)" class="sub-invited">
+                        и {{ invited[1] }}
+                    </div>
                 </h1>
             </div>
             <div class="right-photo big-photo floating-image">
@@ -36,12 +40,12 @@ const route = useRoute()
 
 const [nameId] = route.path.split('/').filter(p => !!p.length)
 
-const namesMap: Record<string, string> = {
-    as: 'Анна & Сергей',
+const namesMap: Record<string, string | string[]> = {
+    as: 'Аня & Сергей',
     s: 'Саша',
     ma: 'Миша & Алёна',
     na: 'Нина & Альберт',
-    kt: 'Катя & Толя',
+    kt: ['Катя & Толя', 'Соня'],
     b: 'Боря',
     zs: 'Женя & Сергей',
     dk: 'Даша & Костя',
@@ -54,7 +58,9 @@ const namesMap: Record<string, string> = {
     sa: 'Алина & Саша',
     ks: 'Ксюша',
     vs: 'Вера & Саша',
-    ay: 'Андрей & Юля',
+    ay: ['Андрей & Юля', 'Варя & Миша'],
+    g: 'Глеб',
+    d: 'Диана',
 }
 
 const invited = namesMap[nameId] ?? 'кажется, вас нет в списке'
@@ -63,9 +69,22 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
 <style scoped lang="scss">
 @use '/assets/css/main.scss' as *;
 
-.card > .content {
-    gap: 15px;
+.card {
+    .content {
+        // padding-left: 10px;
+        gap: 20px;
+        .greating {
+            // font-size: 2.8rem;
+            line-height: 180%;
+
+            .sub-invited {
+                line-height: 1;
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
+
 
 // .card {
 //     .content {
