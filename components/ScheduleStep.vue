@@ -2,7 +2,7 @@
     <div class="card">
         <div class="content">
             <div class="left">
-                • 📍 Ждем вас <u>16 августа 2025</u> в
+                • 📍 Ждем вас <u>16 августа 2025 года</u> в
                 <a class="swiper-no-swiping" style="color: #897; font-weight: bolder;"
                     href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
                     «Парке-отеле "Остров"
@@ -10,7 +10,7 @@
                 </a>
                 <Icon name="lucide:link" style="padding: 0;padding-left: 0;font-size: 0.8rem;" />
                 . Сбор гостей в
-                14:30.
+                14:15.
             </div>
             <div class="api-img left-photo">
                 <img src="/api.png">
