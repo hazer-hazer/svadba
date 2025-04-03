@@ -13,10 +13,10 @@
                 14:15.
             </div>
             <div class="api-img left-photo">
-                <img src="/api.png">
+                <img src="/api.jpg">
             </div>
             <div class="us-img right-photo">
-                <img src="/us3.png">
+                <img src="/us3.jpg">
             </div>
             <div class="right">
                 • 🤵 Мероприятие пройдёт на открытой площадке на природе.

@@ -1,10 +1,10 @@
 <template>
   <div class="card">
     <div class="us-img tl floating-image">
-      <img src="/us2.png">
+      <img src="/us2.jpg">
     </div>
     <div class="us-img tr">
-      <img src="/us6.png">
+      <img src="/us6.jpg">
     </div>
     <div class="text">
       <h1>
@@ -21,10 +21,10 @@
       </div>
     </div>
     <div class="us-img bl">
-      <img src="/us7.png">
+      <img src="/us7.jpg">
     </div>
     <div class="us-img br floating-image">
-      <img src="/us4.png">
+      <img src="/us4.jpg">
     </div>
   </div>
 </template>

@@ -11,10 +11,10 @@
                 </h1>
             </div>
             <div class="right-photo big-photo floating-image">
-                <img src="/us1.png">
+                <img src="/us1.jpg">
             </div>
             <div class="kitya-img left-photo">
-                <img src="/kitya.png">
+                <img src="/kitya.jpg">
             </div>
             <div class="right">
                 <div class="text">

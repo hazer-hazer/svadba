@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/svadba/", // baseURL: '/<repository>/'
     buildAssetsDir: "assets", // don't use "_" at the begining of the folder name to avoids nojkill conflict
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
   },
 
   css: ["~/assets/css/main.scss"],

@@ -82,7 +82,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background-image: url('/bg.png');
+    background-image: url('/bg.jpg');
     filter: saturate(150%) blur(0.15rem) drop-shadow(0 0 50px #fff);
     background-attachment: scroll;
     background-position: center;
@@ -99,10 +99,10 @@ body {
       height: 100%;
       z-index: -1;
 
-      background-image: url('/paper.png');
+      background-image: url('/paper.jpg');
       background-size: cover;
       border-radius: 1rem;
-      opacity: 0.8;
+      opacity: 0.7;
       filter: contrast(110%) saturate(130%);
     }
 
@@ -143,7 +143,7 @@ swiper-slide {
   box-shadow: 0px 10px 10px -5px #666;
   padding: 10px 20px;
 
-  background-image: url('/paper.png');
+  background-image: url('/paper.jpg');
   background-size: cover;
 }
 </style>
