@@ -61,6 +61,7 @@ const namesMap: Record<string, string | string[]> = {
     ay: ['Андрей & Юля', 'Варя & Миша'],
     g: 'Глеб',
     d: 'Диана',
+    da: ['Денис & Алёна', 'Андрей'],
 }
 
 const invited = namesMap[nameId] ?? 'кажется, вас нет в списке'
@@ -73,9 +74,11 @@ const invited = namesMap[nameId] ?? 'кажется, вас нет в списк
     .content {
         // padding-left: 10px;
         gap: 20px;
+
         .greating {
             // font-size: 2.8rem;
-            line-height: 180%;
+            line-height: 175%;
+            font-size: 1.6em;
 
             .sub-invited {
                 line-height: 1;

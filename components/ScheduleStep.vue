@@ -5,7 +5,7 @@
                 • 📍 Ждем вас <u>16 августа 2025</u> в
                 <a class="swiper-no-swiping" style="color: #897; font-weight: bolder;"
                     href="https://yandex.ru/maps/-/CHROaPmo" target="_blank">
-                    «Парке-отеле "Остров'
+                    «Парке-отеле "Остров"
                     Рыболовная усадьба»
                 </a>
                 <Icon name="lucide:link" style="padding: 0;padding-left: 0;font-size: 0.8rem;" />

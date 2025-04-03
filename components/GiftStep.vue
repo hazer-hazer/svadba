@@ -19,6 +19,10 @@
 <style scoped lang="scss">
 @use '/assets/css/main.scss' as *;
 
+.us-img {
+    animation-duration: 8s;
+}
+
 // .us-img {
 //     position: absolute;
 //     top: 5%;

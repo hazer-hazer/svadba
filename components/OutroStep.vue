@@ -102,7 +102,7 @@
   .tl {
     grid-area: tl;
     rotate: -10deg;
-    animation-duration: 8s;
+    animation-duration: 15s;
     translate: -15% -5%;
   }
 
@@ -121,7 +121,7 @@
   .br {
     grid-area: br;
     rotate: 3deg;
-    animation-duration: 5s;
+    animation-duration: 10s;
     translate: 15% 5%;
   }
 

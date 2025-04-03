@@ -68,27 +68,52 @@ body {
   height: calc(100vh - 200px);
   padding: 100px 10vw;
   justify-items: center;
-  background-image: url('/bg.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 50px 0;
 
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('/bg.png');
+    filter: saturate(150%) blur(0.15rem) drop-shadow(0 0 50px #fff);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+
   .card {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      background-image: url('/paper.png');
+      background-size: cover;
+      border-radius: 1rem;
+      opacity: 0.8;
+      filter: contrast(110%) saturate(130%);
+    }
+
     min-width: 40vw;
     max-width: 700px;
     height: max-content;
     // max-height: 80vh;
-    background-image: url('/paper.png');
-    background-size: cover;
-    box-shadow: 0px 15px 25px -15px #666;
+    box-shadow: 0px 15px 30px -10px #774a;
     padding: 10px 20px;
     border-radius: 1rem;
+    backdrop-filter: blur(4px) sepia(50%);
   }
 }
 
