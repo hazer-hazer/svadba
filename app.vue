@@ -84,7 +84,7 @@ body {
 
     background-image: url('/bg.jpg');
     filter: saturate(150%) blur(0.15rem) drop-shadow(0 0 50px #fff);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
   }
