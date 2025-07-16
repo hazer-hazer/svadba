@@ -63,6 +63,7 @@ const namesMap: Record<string, string | string[]> = {
     d: 'Диана',
     da: ['Денис & Алёна', 'Андрей'],
     dr: 'Дарина & Андрей',
+    k: 'Кеша',
 }
 
 const invited = namesMap[nameId] ?? 'кажется, вас нет в списке'
